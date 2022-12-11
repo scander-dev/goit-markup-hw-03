@@ -1,3 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .list {
   list-style: none;
@@ -31,6 +41,11 @@ body {
 
 /* Header */
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-logo {
   font-family: 'Raleway';
   font-weight: 800;
@@ -40,10 +55,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--focused-links-color);
+  
 }
 
 .logo-first {
   color: var(--main-text-color);
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .header-link {
@@ -52,6 +74,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin: 0 40px;
+  
 }
 
 .header-link .link .current:hover
@@ -59,8 +83,14 @@ body {
   color: var(--focused-links-color);
 }
  
+.contakts {
+  display: flex;
+  justify-content: space-between;
+  
+}
 .contakts-link {
-  color: var(--secondary-text-color);   
+  color: var(--secondary-text-color);
+  margin: 0 20px;   
 }
 
 .logo-first:hover,
@@ -76,6 +106,11 @@ body {
 
 .solution {
   background-color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
 }
 
 .solution-title {
@@ -85,6 +120,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--background-color);
+  padding: 192px 474px 0;
 }
 
 .solution-btn {
@@ -99,6 +135,10 @@ body {
   font-family: inherit;
   color: var(--background-color);
   background-color: var(--focused-links-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 48px 635px 192px;
  }
 
 /* Section Description*/
@@ -114,6 +154,12 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  }
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .description-title {
@@ -121,6 +167,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin: 0 12px;
 }
 
 .description-benefits {
@@ -138,12 +185,25 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Section Team */
 
 .team {
   background-color: var(--light-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-title {
@@ -152,6 +212,10 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {  
