@@ -1,16 +1,7 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0; 
 }
 
 .link {
@@ -38,14 +29,61 @@ body {
   letter-spacing: 0.02em;
 }
 
+h1, 
+h2, 
+h3, 
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 
 /* Header */
 
-.header {
+.header-container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+
 .header-logo {
   font-family: 'Raleway';
   font-weight: 800;
@@ -62,10 +100,13 @@ body {
   color: var(--main-text-color);
 }
 
+.navigation {
+  margin-left: 77px;
+}
+
 .header-list {
   display: flex;
-  justify-content: space-between;
-  
+  gap: 40px;
 }
 
 .header-link {
@@ -74,19 +115,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin: 0 40px;
-  
+  padding: 24px 0;
+  display: block;
 }
 
-.header-link .link .current:hover
-.header-link .link .current:focus {
+.header-link .link .current {
   color: var(--focused-links-color);
 }
  
 .contakts {
   display: flex;
-  justify-content: space-between;
-  
+  gap: 40px;
+  margin-left: auto;
 }
 .contakts-link {
   color: var(--secondary-text-color);
@@ -106,11 +146,8 @@ body {
 
 .solution {
   background-color: var(--main-text-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  
+  padding: 192px 0;
+  text-align: center;
 }
 
 .solution-title {
@@ -120,7 +157,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--background-color);
-  padding: 192px 474px 0;
+  width: 496px;
+  margin: 0 auto;
+
 }
 
 .solution-btn {
@@ -138,7 +177,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
-  margin: 48px 635px 192px;
+  margin: 0 auto;
+  margin-top: 48px;
  }
 
 /* Section Description*/
