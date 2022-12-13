@@ -77,7 +77,6 @@ a {
 
 .header-container {
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
   width: 1158px;
   margin: 0 auto;
@@ -183,6 +182,15 @@ a {
 
 /* Section Description*/
 
+.description-container {
+  display: flex;
+  align-items: center;
+  width: 1158px;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -195,19 +203,20 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
   }
-.description {
+
+.descripion {
   display: flex;
-  justify-content: center;
   align-items: center;
-  
-}
+  margin: 0 auto;
+} 
 
 .description-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin: 0 12px;
+  /*margin: 0 12px;*/
+  margin-left: 0;
 }
 
 .description-benefits {
@@ -219,23 +228,22 @@ a {
 
 /* Section Work */
 
+.work-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
 }
 
-.work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Section Team */
 
