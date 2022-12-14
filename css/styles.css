@@ -75,13 +75,6 @@ a {
 
 /* Header */
 
-.header-container {
-  display: flex;
-  align-items: center;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 .header-logo {
   font-family: 'Raleway';
@@ -129,7 +122,6 @@ a {
 }
 .contakts-link {
   color: var(--secondary-text-color);
-  margin: 0 20px;   
 }
 
 .logo-first:hover,
@@ -182,15 +174,7 @@ a {
 
 /* Section Description*/
 
-.description-container {
-  display: flex;
-  align-items: center;
-  width: 1158px;
-  justify-content: space-between;
-  gap: 24px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -204,10 +188,9 @@ a {
   overflow: hidden;
   }
 
-.descripion {
+.description-list {
   display: flex;
-  align-items: center;
-  margin: 0 auto;
+  gap: 24px;
 } 
 
 .description-title {
@@ -215,8 +198,7 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  /*margin: 0 12px;*/
-  margin-left: 0;
+  margin-bottom: 8px;
 }
 
 .description-benefits {
@@ -228,22 +210,25 @@ a {
 
 /* Section Work */
 
-.work-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 120px;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+.work {
+  padding-top: 0;
 }
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
+
 }
 
+.work-list {
+  display: flex;
+  gap: 24px;
+}
 
 /* Section Team */
 
@@ -260,10 +245,19 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.specialist {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .name {  
@@ -271,6 +265,7 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  
 }
 
 .direction {
